@@ -5,6 +5,7 @@ import Money from "./Money";
 test("같은지 확인", () => {
   expect(new Money(5).equals(new Money(5))).toBeTruthy();
   expect(new Money(5).equals(new Money(6))).toBeFalsy();
+  expect(new Dollar(5).equals(new Franc(5))).toBeFalsy();
 });
 
 describe("달러 계산", () => {
